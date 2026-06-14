@@ -29,3 +29,4 @@ When protecting `*.workers.dev` or custom domain with Access + service tokens, a
 
 - [Cloudflare Next.js guide](https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/)
 - [OpenNext Cloudflare](https://opennext.js.org/cloudflare)
+- [Full-stack applications](full-stack-applications.md) — rendering strategy, static assets

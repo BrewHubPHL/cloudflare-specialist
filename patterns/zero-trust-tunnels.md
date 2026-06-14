@@ -1,9 +1,24 @@
 # Zero Trust Tunnels & Access
 
 **Impact:** HIGH  
-**Tags:** cloudflared, access, tunnel, self-hosted
+**Tags:** cloudflared, access, tunnel, self-hosted  
+**Books:** Kerkour Ch.4.5 / Ch.9 — [summary](../references/book-summaries/cloudflare-book-ch09-access.md); Ch.10 checklist — [domain-setup-checklist.md](domain-setup-checklist.md)
 
 Abstract patterns for exposing self-hosted fleet services (Coolify, Supabase, Pi boxes) without inbound ports.
+
+Broader security, compliance, deployment, and secrets: `security-compliance.md`.
+
+## Origin protection ladder (Kerkour)
+
+| Priority | Method | When |
+|----------|--------|------|
+| 1 | **Cloudflare Tunnel** | Default — no open ports, edge TLS |
+| 2 | Firewall **allowlist** [Cloudflare IPs](https://api.cloudflare.com/client/v4/ips) | Tunnel impossible |
+| 3 | **Separate egress** for outbound fetches (RSS, webhooks) | Prevent SSRF IP leak |
+| 4 | **Authenticated Origin Pulls** (mTLS) | High-assurance origin |
+| 5 | **`X-Cdn-Token`** transform + origin validation | Belt-and-suspenders — see `domain-setup-checklist.md` |
+
+Create tunnel: **Zero Trust → Access → Tunnels → Create** — Docker/systemd `cloudflared` on fleet box.
 
 ## Invariants
 

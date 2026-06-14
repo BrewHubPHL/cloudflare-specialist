@@ -68,7 +68,23 @@ Run after every binding change. Import `CloudflareEnv` in handlers.
 
 Set `CLOUDFLARE_API_TOKEN` with least-privilege (Workers Scripts:Edit). Store in CI secrets — not repo.
 
+## Static assets (full-stack)
+
+```jsonc
+{
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": false,
+    "not_found_handling": "single-page-application"
+  }
+}
+```
+
+See `full-stack-applications.md` for rendering strategy, SSR, and caching.
+
 ## References
 
 - [Wrangler configuration](https://developers.cloudflare.com/workers/wrangler/configuration/)
 - [Wrangler commands](https://developers.cloudflare.com/workers/wrangler/commands/)
+- [Full-stack on Workers](full-stack-applications.md)
