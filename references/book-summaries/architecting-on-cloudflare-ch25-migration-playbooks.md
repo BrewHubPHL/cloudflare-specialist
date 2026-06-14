@@ -108,7 +108,7 @@ ASL → TypeScript `step.do()`; running executions finish on old system; new on 
 
 ---
 
-## BrewHub default path
+## Recommended default path
 
 1. Cloudflare proxy + Tunnel to fleet (phase 1 — likely done)
 2. Edge API Worker + Hyperdrive → Postgres (hybrid permanent)

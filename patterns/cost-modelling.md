@@ -120,7 +120,7 @@ Spike response: traffic proportional? → per-request metrics → recent deploy 
 
 ---
 
-## BrewHub defaults
+## Recommended defaults
 
 | Workload | Cost-efficient pattern |
 |----------|------------------------|

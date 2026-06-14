@@ -80,7 +80,7 @@ Monitor: top-k scores, user feedback, sample human eval.
 
 ---
 
-## BrewHub
+## Production notes
 
 - Shop docs / SOPs: AI Search or Vectorize + edge retrieval; sensitive ops data stays fleet-bound
 - Staff agents: RAG as one tool among many (Ch.18); Postgres for authoritative state

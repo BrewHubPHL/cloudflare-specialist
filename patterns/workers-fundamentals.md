@@ -115,7 +115,7 @@ When Workers call a centralised backend (Hyperdrive/Postgres, single-region API)
 { "placement": { "region": "aws:us-east-1" } }
 ```
 
-Default global placement suits cache-heavy, backend-free paths. BrewHub: evaluate Smart Placement toward pooler region.
+Default global placement suits cache-heavy, backend-free paths. Recommendation: evaluate Smart Placement toward pooler region.
 
 ## Service bindings
 

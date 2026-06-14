@@ -26,7 +26,7 @@ Cache aggressively at the edge with explicit policies — but **bypass cache whe
 9. Use `stale-while-revalidate` where staleness is acceptable — better UX under load (verify current Cloudflare behavior in docs).
 10. Custom hostnames (Cloudflare for SaaS): release hostnames when customer offboards; Error 1000 if two SaaS products claim same hostname.
 
-## BrewHub notes
+## Production notes
 
 - Self-hosted Coolify origin behind orange cloud: caching static/OpenNext assets at edge; API `/api/*` uncached or short TTL only if truly public.
 - Fleet Postgres responses must not be CDN-cached — Worker/Hyperdrive path is dynamic.

@@ -162,7 +162,7 @@ Preview: branch URLs via Workers Builds or `wrangler deploy --env preview`.
 
 ---
 
-## BrewHub workflow
+## Recommended workflow
 
 1. `wrangler dev` for API adapter business logic
 2. `remote: true` on Hyperdrive **only** when debugging staging Postgres/RLS

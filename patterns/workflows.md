@@ -192,7 +192,7 @@ Workflow logs flush at instance end — use dashboard step view for in-flight de
 
 ---
 
-## BrewHub
+## Production notes
 
 - Payment capture → inventory → notification: Workflow with Postgres idempotency via Hyperdrive
 - Long approval chains: `waitForEvent` + timeout escalation

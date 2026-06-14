@@ -131,7 +131,7 @@ Propagate trace/request ID Worker → DO → Container.
 
 ---
 
-## BrewHub
+## Recommended defaults
 
 - **Default fleet:** Python agents on Coolify via Tunnel — not Containers unless porting a specific binary
 - Container candidate: legacy Go service, GPU-less heavy transcode, queue job needing >128 MB RAM

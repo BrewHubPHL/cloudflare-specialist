@@ -77,7 +77,7 @@ Origin unreachable, pool exhaustion (rising p99 before errors), stale cache afte
 
 RDS Proxy = same-region connection storms. Hyperdrive = global Workers + geography + optional query cache.
 
-**Permanent architecture** — not just migration bridge (BrewHub SSOT).
+**Permanent architecture** — not just migration bridge (Postgres SSOT).
 
 ---
 
@@ -94,7 +94,7 @@ Write-heavy → not KV (10:1 write pricing).
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Tenant config / feature flags → KV with TTL matching deploy cadence
 - Money, inventory, entitlements → Hyperdrive Postgres (never KV authoritative)

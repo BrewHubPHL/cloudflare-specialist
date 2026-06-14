@@ -24,11 +24,11 @@ Use Cloudflare for speed/security economics — but **partition accounts**, plan
 7. Fast product iteration at Cloudflare is **feature velocity + deprecation risk** — pin `compatibility_date`, read changelogs.
 8. Part 1 (Ch 1–4): networking fundamentals — don't skip. Part 2 (Ch 5–9): product chapters, read as needed.
 
-## BrewHub notes
+## Production notes
 
 - Aligns with sovereignty: edge on CF, SSOT Postgres on fleet, **not** all eggs in one CF account.
 - Phoenix "immortal deploy" metaphor matches debt-free ops — business logic in app, platform runs cheap.
-- Denial-of-wallet from hyperscaler egress → BrewHub uses CF CDN + Hetzner/Coolify compute with tunnel.
+- Denial-of-wallet from hyperscaler egress → a self-hosted topology: CF CDN + Hetzner/Coolify compute with tunnel.
 
 ## Cross-links
 

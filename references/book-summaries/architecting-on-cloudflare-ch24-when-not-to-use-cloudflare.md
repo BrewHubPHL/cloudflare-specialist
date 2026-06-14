@@ -107,7 +107,7 @@ Cloudflare can still **front** hyperscaler origins (WAF, CDN, edge auth) without
 **Edge:** auth, caching, rate limits, routing, personalisation  
 **Backend:** business logic near data, batch, GPU, legacy
 
-BrewHub pattern: Workers + Access/Tunnel at edge; Postgres + Python agents on Coolify/Hetzner; Hyperdrive bridges Worker → SSOT.
+A common pattern: Workers + Access/Tunnel at edge; Postgres + Python agents on Coolify/Hetzner; Hyperdrive bridges Worker → SSOT.
 
 Hybrid steady state is valid — not a phase you must exit.
 

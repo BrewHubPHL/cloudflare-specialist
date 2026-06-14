@@ -79,7 +79,7 @@ No Object Lock compliance mode, S3 Select, deep archive tiers, S3 Inventory. Buc
 
 ---
 
-## BrewHub patterns
+## Production patterns
 
 - Webhook audit payloads, exports, log archives → R2
 - Presigned upload for large fleet exports if needed

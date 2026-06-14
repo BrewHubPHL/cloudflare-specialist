@@ -132,7 +132,7 @@ See `wrangler-config.md` for env-specific config.
 
 ---
 
-## Private connectivity (BrewHub)
+## Private connectivity
 
 | Layer | Use |
 |-------|-----|
@@ -177,7 +177,7 @@ Platform WAF for HTTP threats; don't rely on WAF alone for app authZ.
 
 ---
 
-## BrewHub checklist
+## Production checklist
 
 - [ ] Access on human hostnames; service tokens for Worker → fleet
 - [ ] No duplicate Access app per subdomain

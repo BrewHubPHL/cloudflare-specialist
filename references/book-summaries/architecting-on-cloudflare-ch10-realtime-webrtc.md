@@ -86,7 +86,7 @@ Debug: `webrtc-internals`, RTCP stats (loss, jitter, RTT), same-machine baseline
 
 ---
 
-## BrewHub notes
+## Production notes
 
 Not on v1 roadmap unless voice/video features planned.
 

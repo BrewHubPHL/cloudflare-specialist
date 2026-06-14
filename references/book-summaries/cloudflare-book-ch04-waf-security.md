@@ -26,11 +26,11 @@ Lock the **origin** (tunnel + no inbound ports) before tuning WAF rules — othe
 9. Turnstile for forms; rate limiting at edge (see `architectural-patterns.md` for DO counters in Workers path).
 10. Fingerprinting (TLS JA3, JS signals) for bot detection — distinct from ad-tech tracking; Cloudflare may store signals.
 
-## BrewHub notes
+## Production notes
 
 - **Non-negotiable:** Coolify/Hetzner fleet via tunnel only — matches `zero-trust-tunnels.md`.
 - Service tokens for Worker→origin; Access for humans — never duplicate Access apps per hostname.
-- Geo-blocking: policy decision for BrewHub — document in ADR if used (support/compliance trade-off).
+- Geo-blocking: policy decision — document in ADR if used (support/compliance trade-off).
 
 ## Cross-links
 

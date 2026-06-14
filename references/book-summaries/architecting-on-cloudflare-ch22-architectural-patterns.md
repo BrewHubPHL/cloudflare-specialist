@@ -74,7 +74,7 @@ Examples in book: DB-per-tenant vs RLS Postgres; DO vs Redis rate limits; Queues
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - API adapter Worker as gateway toward Hyperdrive Postgres + fleet agents
 - Per-tenant rate limits via DO keyed by tenantId/userId

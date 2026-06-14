@@ -7,7 +7,7 @@ added: 2026-06-14
 
 ## Summary
 
-Workers trade container cold starts for **V8 isolate** constraints but excel at edge latency and local dev (`wrangler dev`). Prefer **monolithic Workers** over micro-function sprawl — communication cost dominates. Use **Hono** (or similar) for portability across Workers/Node/Lambda. Smart Placement helps DB-heavy Workers but is opaque — explicit placement hints preferred when known. **Pages `/api` proxy** eliminates CORS and enables HttpOnly cookies by same-origin routing. D1 author warns against latency-sensitive UI/API on D1 (prefer Hyperdrive/Neon/Postgres for BrewHub SSOT). Exit path: replace bindings with HTTP APIs + Node Dockerfile when outgrowing edge.
+Workers trade container cold starts for **V8 isolate** constraints but excel at edge latency and local dev (`wrangler dev`). Prefer **monolithic Workers** over micro-function sprawl — communication cost dominates. Use **Hono** (or similar) for portability across Workers/Node/Lambda. Smart Placement helps DB-heavy Workers but is opaque — explicit placement hints preferred when known. **Pages `/api` proxy** eliminates CORS and enables HttpOnly cookies by same-origin routing. D1 author warns against latency-sensitive UI/API on D1 (prefer Hyperdrive/Neon/Postgres for your Postgres SSOT). Exit path: replace bindings with HTTP APIs + Node Dockerfile when outgrowing edge.
 
 ## One-line thesis
 
@@ -26,14 +26,14 @@ Workers trade container cold starts for **V8 isolate** constraints but excel at 
 9. Book cautions: new TCP connection per request hurts DB — use Hyperdrive pooler, not raw connects per invocation.
 10. Pages consolidation: new projects use Workers + `[assets]` (see `full-stack-applications.md`) — Pages patterns still apply to proxy/CORS lessons.
 
-## BrewHub notes
+## Production notes
 
 ```
 OpenNext Worker (UI) ── same zone ── API Worker ── Hyperdrive ── fleet Postgres
                               └── Tunnel + HMAC ── Python agents
 ```
 - No CORS between UI and API when proxied through same hostname.
-- SSOT stays Postgres — not D1 for interactive API (book + BrewHub alignment).
+- SSOT stays Postgres — not D1 for interactive API (aligns with the self-hosted-SSOT stance).
 
 ## Cross-links
 

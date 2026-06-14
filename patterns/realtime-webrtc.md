@@ -124,7 +124,7 @@ Debug: `chrome://webrtc-internals`, RealtimeKit stats, two browsers same machine
 
 ---
 
-## BrewHub
+## Production notes
 
 Not default v1 scope. If voice/video added later: DO session + Realtime media + Postgres records + R2 recordings + Queue for transcription.
 

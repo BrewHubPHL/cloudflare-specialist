@@ -121,7 +121,7 @@ Preview: `wrangler deploy --env preview` or Workers Builds branch URLs.
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - `wrangler dev` for API adapter logic; `remote: true` on Hyperdrive only when debugging pool/RLS against staging Postgres
 - OpenNext: `opennextjs-cloudflare preview` — not just `next dev`

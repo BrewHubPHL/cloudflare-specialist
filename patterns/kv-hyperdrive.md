@@ -80,7 +80,7 @@ const rows = await sql`SELECT * FROM orders WHERE tenant_id = ${tenantId} LIMIT 
 
 Use **transaction pooler URI** (Supabase pooler) — see `supabase-specialist`.
 
-### Permanent architecture (BrewHub SSOT)
+### Permanent architecture (Postgres SSOT)
 
 Not a migration stepping stone only. Keep Postgres when: extensions, multi-app DB, team ops, RLS/compliance, >10 GB per partition.
 
@@ -136,7 +136,7 @@ Hyperdrive: query duration percentiles (p99 >> p50 → pool pressure); separate 
 
 ---
 
-## BrewHub
+## Recommended storage split
 
 | Data | Store |
 |------|-------|

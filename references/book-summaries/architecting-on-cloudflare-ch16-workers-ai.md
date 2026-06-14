@@ -112,7 +112,7 @@ const response = await env.AI.run("@cf/meta/llama-3.1-8b-instruct", {
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Staff agents on fleet Python tier may call frontier models directly — edge Workers AI for **classification, routing, cheap extraction** at boundary
 - Never send payment/PII to models without policy; SSOT stays Postgres

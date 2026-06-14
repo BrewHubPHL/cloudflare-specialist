@@ -17,7 +17,7 @@ Globally-unique, **single-threaded actors** — coordination primitive first, SQ
 | Config, flags, cache (stale OK ~60s) | KV |
 | Relational queries, no cross-request coordination | D1 or Hyperdrive → Postgres |
 | Carts, rate limits, WebSockets, real-time collab | **Durable Objects** |
-| Money, RLS, cross-tenant reports | **Postgres SSOT** (BrewHub fleet) |
+| Money, RLS, cross-tenant reports | **Postgres SSOT** (your fleet Postgres) |
 
 If you're minimising DO count for cost, you're modelling wrong — shift to **one DO per user/room/document**.
 
@@ -155,7 +155,7 @@ OpenNext on Cloudflare may use DOs for tag cache / incremental cache — configu
 
 ---
 
-## BrewHub
+## Production notes
 
 - DO for edge coordination (presence, edge rate limits) — OK
 - Payment/inventory authority → Postgres via Hyperdrive, not DO SQLite alone
