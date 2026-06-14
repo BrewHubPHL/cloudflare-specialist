@@ -110,7 +110,7 @@ List by prefix OK; cross-dimensional search needs metadata DB.
 
 ## Log archive / data hub
 
-BrewHub-friendly cheap path:
+A cheap path:
 
 ```
 Workers Logs / Logpush → R2 (or Pipelines → Iceberg) → R2 SQL for investigation
@@ -140,7 +140,7 @@ Production (CF Workers + R2) ──rclone/sync──► Scaleway / Glacier / Het
                                               (encrypted, separate credentials)
 ```
 
-BrewHub: Postgres backups via Coolify to off-CF storage; R2 for operational blobs only.
+Recommendation: Postgres backups via Coolify to off-CF storage; R2 for operational blobs only.
 
 ---
 

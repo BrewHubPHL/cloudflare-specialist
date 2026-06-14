@@ -93,7 +93,7 @@ Environments: same code, **different bindings** — not `if (env === 'staging')`
 
 ## Private connectivity
 
-- **Tunnel:** outbound-only `cloudflared` — BrewHub fleet default
+- **Tunnel:** outbound-only `cloudflared` — self-hosted fleet default
 - **VPC Services (beta):** binding-scoped endpoint — SSRF-safe vs broad tunnel access
 - **Mesh / `cf1:network`:** agent access to internal hosts without per-host registration
 
@@ -111,7 +111,7 @@ WAF + Access + Worker validation = layered; same-zone service bindings bypass WA
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Access for humans; service tokens for Worker → fleet (see `zero-trust-tunnels.md`)
 - Payment tokens only — Postgres SSOT; audit via Logpush → R2

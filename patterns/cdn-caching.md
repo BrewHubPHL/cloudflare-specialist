@@ -106,11 +106,11 @@ Full TLS/mTLS origin patterns: `security-compliance.md`, `waf-security.md`.
 
 Cloudflare for SaaS: fallback origin + API-managed custom hostnames. **Release** hostnames when customer leaves — duplicate hostname across two Cloudflare SaaS products → Error 1000.
 
-BrewHub multi-tenant custom domains: see `multi-tenant.md`.
+Multi-tenant custom domains: see `multi-tenant.md`.
 
 ---
 
-## Self-hosted origin (BrewHub)
+## Self-hosted origin
 
 ```
 User → Cloudflare (cache HIT for static/OpenNext assets)

@@ -93,7 +93,7 @@ Worker validates session **before** `ASSETS.fetch()` — unauthenticated users n
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - OpenNext on Workers for UI; API adapter Worker for fleet/Hyperdrive
 - Public marketing static where possible; authenticated app SSR/SPA with edge auth

@@ -111,7 +111,7 @@ Per-request D1 writes for metering can exceed Worker cost — **batch in memory*
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Postgres SSOT on fleet via Hyperdrive — not D1 monolith for payment data
 - Row-level RLS in Postgres + edge tenant context propagation

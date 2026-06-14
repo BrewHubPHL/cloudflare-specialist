@@ -290,7 +290,7 @@ Concurrent Workers race — one Durable Object per limited entity.
 SQLite blob bloat — R2 for bytes, metadata row in D1/Postgres.
 
 ### ❌ Hyperdrive treated as temporary bridge only
-External Postgres is a valid permanent SSOT — BrewHub default.
+External Postgres is a valid permanent SSOT — a recommended default.
 
 ## KV & Hyperdrive (Ch.14)
 

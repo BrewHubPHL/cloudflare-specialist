@@ -173,7 +173,7 @@ One page, five questions:
 
 Book examples: DB-per-tenant vs RLS Postgres; DO vs Redis rate limits; Queues vs Workflows for file pipeline.
 
-BrewHub: document Hyperdrive Postgres SSOT, edge vs fleet agent split, tenant isolation tier.
+Recommendation: document Hyperdrive Postgres SSOT, edge vs fleet agent split, tenant isolation tier.
 
 ---
 
@@ -190,7 +190,7 @@ Full list: [anti-patterns.md](../anti-patterns.md).
 
 ---
 
-## BrewHub
+## Reference architecture
 
 ```
 Access (humans) → OpenNext / API Gateway Worker

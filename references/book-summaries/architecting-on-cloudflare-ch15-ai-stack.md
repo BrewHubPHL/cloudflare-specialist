@@ -90,7 +90,7 @@ Build on Cloudflare when differentiated AI, tight app integration, avoid per-sea
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Workers AI + AI Gateway for edge classification, embeddings, light support
 - Heavy reasoning / shop-specific agents → fleet Python via Tunnel (Ch.18 split)

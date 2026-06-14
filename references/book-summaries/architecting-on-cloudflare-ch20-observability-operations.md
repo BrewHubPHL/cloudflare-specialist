@@ -101,7 +101,7 @@ High-cardinality business metrics (per-tenant usage billing). Not real-time aler
 
 ---
 
-## BrewHub
+## Production notes
 
 - Workers Logs on API adapter + OpenNext edge
 - Webhook audit in R2 via Logpush path for long retention

@@ -112,7 +112,7 @@ Choose **hyperscaler** when: native VPC, >12 GB RAM, deep SQS/DynamoDB/BigQuery 
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Default: Python agents on fleet via Tunnel — not Containers unless porting specific binary
 - Queue consumer needing 4 GB RAM or Go binary → Container or fleet pull consumer

@@ -90,7 +90,7 @@ Hybrid (custom): Vectorize + D1 FTS5 → merge/dedupe scores.
 
 ---
 
-## BrewHub
+## Production notes
 
 - Public/help docs: AI Search or Vectorize at edge
 - Shop secrets, pricing authority, payment flows: **Postgres SSOT**, not vector index alone

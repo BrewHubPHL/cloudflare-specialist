@@ -110,7 +110,7 @@ Backlog depth, consumer error rate, processing latency (send→ack), DLQ inflow.
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - R2 upload event → Queue → thumbnail/embed (links `r2-object-storage.md`)
 - **Not** for exactly-once payment semantics — Postgres SSOT + advisory locks

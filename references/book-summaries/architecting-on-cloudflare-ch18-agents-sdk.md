@@ -116,10 +116,10 @@ Default: **one agent**. Multi-agent when security boundaries (payment vs researc
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Edge: classification, routing, Access, RAG over public docs — Workers AI + Gateway
-- Fleet: heavy reasoning, brewhub-specific tools — Python agents via Tunnel + HMAC
+- Fleet: heavy reasoning, app-specific tools — Python agents via Tunnel + HMAC
 - Staff agent: narrow tools (inventory lookup, ticket create) — not payment or account mutation without Postgres workflow
 - MCP for internal ops tools behind Access Managed OAuth
 - Cost monitoring from day one — agent loops burn tokens fast

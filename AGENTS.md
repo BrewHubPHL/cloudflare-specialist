@@ -20,3 +20,9 @@ Relational queries + strong consistency?            → D1 (many small DBs) or H
 ```
 
 Full-stack rendering: `full-stack-applications.md` — static default, SSR needs edge data.
+
+## Operating principles
+
+The fleet-wide philosophy (zero-trust the client, fail closed, idempotency on the money
+path, etc.) lives in [PRINCIPLES.md](PRINCIPLES.md). Apply it on top of the domain
+patterns in this repo.

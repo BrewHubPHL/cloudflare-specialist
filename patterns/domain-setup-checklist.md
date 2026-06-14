@@ -4,7 +4,7 @@
 **Tags:** dns, ssl, cache-rules, transform-rules, zero-trust  
 **Book:** Kerkour Ch.10 bonus — [summary](../references/book-summaries/cloudflare-book-ch10-conclusion.md)
 
-Author's production defaults for **modern Go/Node API + SPA** (Nov 2024). Tune for BrewHub stack (OpenNext + Worker API + Coolify origin). Legacy PHP/insecure stacks need **more** WAF, not less.
+Author's production defaults for **modern Go/Node API + SPA** (Nov 2024). Tune for a self-hosted stack (OpenNext + Worker API + Coolify origin). Legacy PHP/insecure stacks need **more** WAF, not less.
 
 ---
 
@@ -21,7 +21,7 @@ Author's production defaults for **modern Go/Node API + SPA** (Nov 2024). Tune f
 | Encryption mode | **Full (strict)** | Valid origin cert or tunnel |
 | Always Use HTTPS | On | |
 | HSTS (dashboard) | **Off** | Set HSTS in app when ready — understand lock-in |
-| Minimum TLS | **1.3** (author) or 1.2 if legacy clients | BrewHub: 1.2 default unless all modern |
+| Minimum TLS | **1.3** (author) or 1.2 if legacy clients | 1.2 default unless all modern |
 | TLS 1.3 | On | |
 | Automatic HTTPS Rewrites | Off | Author preference — avoid double redirects |
 | Encrypted Client Hello | On | |
@@ -33,7 +33,7 @@ Author's production defaults for **modern Go/Node API + SPA** (Nov 2024). Tune f
 
 Author disables aggressive bot features when Go/Node + SPA reduce XSS/SQLi surface:
 
-| Setting | Author value | BrewHub |
+| Setting | Author value | Recommended |
 |---------|--------------|---------|
 | Bot Fight Mode | Off | Re-enable if scraping abuse |
 | Security Level | Medium | |
@@ -72,7 +72,7 @@ Expression: (http.cookie contains "myapp_auth" || len(http.request.headers["auth
 Action: Bypass cache
 ```
 
-Replace `myapp_auth` with BrewHub session cookie name.
+Replace `myapp_auth` with your session cookie name.
 
 **Rule 2 — Cache everything else**
 
@@ -134,7 +134,7 @@ Store secret in **wrangler secret** / fleet env — never in dashboard rule plai
 
 ---
 
-## New zone workflow (BrewHub)
+## New zone workflow
 
 1. Add zone → Full (strict) → tunnel route (no public origin ports)
 2. Apply cache bypass + cache-all rules

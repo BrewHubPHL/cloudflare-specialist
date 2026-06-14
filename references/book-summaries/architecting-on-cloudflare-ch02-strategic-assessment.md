@@ -11,13 +11,13 @@ Platform adoption is never purely technical — workload fit, economics, team ra
 
 ---
 
-## Evaluation heuristic (author + BrewHub alignment)
+## Evaluation heuristic (aligns with the self-hosted-SSOT stance)
 
 **Start with Cloudflare and find reasons not to use it** — not the reverse.
 
 Greenfield edge-first apps inherit global deployment, zero cold starts, integrated TLS/DDoS, and binding-native storage without multi-region engineering. Validate hard constraints early before switching costs accumulate.
 
-BrewHub corollary: edge Workers + Access/Tunnel + self-hosted Postgres (Coolify/Hetzner) is the default topology; hyperscaler backends are intentional, not accidental.
+Corollary: edge Workers + Access/Tunnel + self-hosted Postgres (Coolify/Hetzner) is the default topology; hyperscaler backends are intentional, not accidental.
 
 ---
 
@@ -150,7 +150,7 @@ Implications: canary/gradual rollout, pre-deploy testing, real-time error/latenc
 
 ---
 
-## BrewHub integration notes
+## Production integration notes
 
 - **Hybrid by design:** OpenNext + API Worker at edge; Postgres SSOT via Hyperdrive; Python agents on fleet via Tunnel + HMAC
 - **Kill switches:** payment state never KV-only; no inbound fleet ports; Access before Worker deploy

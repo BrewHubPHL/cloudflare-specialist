@@ -68,9 +68,9 @@ Vectorize limits (verify): e.g. 1536 dims, namespaces for multi-tenant, ~10M vec
 
 Fine-tuning on every content update is **not realistic** — too slow and GPU-expensive.
 
-Chunk long documents (embedding input limits). Vector stores: **Vectorize**, **pgvector on Postgres** (BrewHub SSOT via Hyperdrive), Milvus, Pinecone.
+Chunk long documents (embedding input limits). Vector stores: **Vectorize**, **pgvector on Postgres** (your SSOT via Hyperdrive), Milvus, Pinecone.
 
-BrewHub: pgvector on fleet Postgres for authoritative doc/shop RAG; Queue-driven re-embed on change.
+Recommendation: pgvector on fleet Postgres for authoritative doc/shop RAG; Queue-driven re-embed on change.
 
 ---
 
@@ -81,7 +81,7 @@ BrewHub: pgvector on fleet Postgres for authoritative doc/shop RAG; Queue-driven
 | Embeddings, classification (high volume) | Workers AI |
 | Internal summarisation | Workers AI |
 | Customer-facing complex reasoning (low volume) | GPT/Claude via AI Gateway |
-| Shop-specific heavy agents | BrewHub fleet Python via Tunnel |
+| Shop-specific heavy agents | self-hosted fleet Python via Tunnel |
 
 AI Gateway = unified cost/latency logging across providers.
 
@@ -140,7 +140,7 @@ Build when AI behaviour is differentiated and tightly coupled to app logic.
 
 ---
 
-## BrewHub default
+## Recommended default
 
 ```
 Edge: Workers AI + AI Gateway (classify, embed, light support)

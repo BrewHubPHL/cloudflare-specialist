@@ -78,7 +78,7 @@ Evolution: Workers (2017) → KV → DO → D1 → R2 → Queues/Hyperdrive/AI �
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Default heuristic aligns with book: **start Cloudflare, prove constraints**
 - Hybrid Postgres SSOT via Hyperdrive is valid long-term architecture

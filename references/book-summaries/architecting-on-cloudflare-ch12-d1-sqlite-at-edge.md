@@ -19,7 +19,7 @@
 | **Hyperdrive → Postgres/MySQL** | Partition >10 GB, PostGIS/stored procs/LISTEN-NOTIFY, existing Postgres works — **valid permanent architecture** |
 | **Elsewhere** | Analytics at 100s GB (warehouse), blobs in R2, coordination counters in DO |
 
-BrewHub default: **Hyperdrive → fleet Postgres** for SSOT; D1 for edge-only relational slices if ever needed.
+Recommended default: **Hyperdrive → fleet Postgres** for SSOT; D1 for edge-only relational slices if ever needed.
 
 ---
 
@@ -123,4 +123,4 @@ Types: UUID/TIMESTAMP/JSONB → TEXT/INTEGER + app validation.
 - Provisioning all DBs from one CI region
 - Full table scans on hot paths
 - Cross-tenant reporting via N database fan-out without analytics pipeline
-- Assuming D1 replaces BrewHub Postgres SSOT
+- Assuming D1 replaces an external Postgres SSOT

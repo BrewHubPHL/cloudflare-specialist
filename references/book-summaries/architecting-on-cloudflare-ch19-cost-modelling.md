@@ -108,7 +108,7 @@ Per-tenant metering: **Analytics Engine** (see `observability-operations.md`).
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Postgres SSOT on fleet — Hyperdrive for edge reads; don't duplicate payment state in D1
 - R2 audit logs + zero egress for exports/replay archives

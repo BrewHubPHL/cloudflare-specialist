@@ -23,7 +23,7 @@ No servers to SSH into. Observability is **designed in** — or evidence is gone
 
 **MVP:** `[observability] enabled`, `wrangler tail`, dashboard metrics.
 
-**Production (BrewHub bar):**
+**Production (production bar):**
 
 ```toml
 [observability]
@@ -139,7 +139,7 @@ No external query of DO SQLite — logs are your window.
 
 ---
 
-## BrewHub
+## Production notes
 
 - API Worker + OpenNext: Workers Logs enabled
 - Webhook audit payloads → R2; Logpush for long retention

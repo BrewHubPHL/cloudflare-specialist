@@ -59,7 +59,7 @@ Define rollback triggers **before** deploy: error rate 2× baseline, new 5xx sig
 
 ## Phased migration
 
-| Phase | Action | BrewHub note |
+| Phase | Action | Production note |
 |-------|--------|--------------|
 | 1 Edge | Cloudflare in front / proxy Worker | Tunnel to fleet likely exists |
 | 2 Storage | Sippy + R2; Super Slurper long tail | Audit logs, exports |
@@ -104,7 +104,7 @@ I/O orchestration often cheaper on Workers (CPU vs wall billing) — model your 
 
 ---
 
-## Playbook: Postgres → stay on Postgres (BrewHub)
+## Playbook: Postgres → stay on Postgres
 
 **Default — do not migrate SSOT to D1.**
 

@@ -120,11 +120,11 @@ Enable for any real user traffic; skip only for prototypes.
 
 Prompt injection is not fully solvable — delimiter untrusted input, limit tool/action blast radius, WAF AI Security where available.
 
-BrewHub: don't send payment authority or full PII to models without policy; SSOT stays Postgres.
+Recommendation: don't send payment authority or full PII to models without policy; SSOT stays Postgres.
 
 ---
 
-## BrewHub integration
+## Production integration
 
 ```
 Edge Worker → Workers AI (classify/route/extract cheap)

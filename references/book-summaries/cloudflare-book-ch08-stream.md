@@ -18,9 +18,9 @@ Brief chapter on video delivery. R2 → Stream upload path mentioned. Author **h
 1. Upload path: R2 object → Stream (when staying CF-native).
 2. **Evaluate Bunny Stream** for performance-sensitive video (author's public demo URLs in book).
 3. Treat Stream choice as **product decision with exit** — not automatic CF stack extension.
-4. If BrewHub adds video: measure seek latency, buffering, egress pricing — not brand loyalty.
+4. If you add video: measure seek latency, buffering, egress pricing — not brand loyalty.
 
-## BrewHub notes
+## Production notes
 
 - Low priority until video product surface exists.
 - Fits "study alternatives when CF isn't competitive" from Ch.1/Ch.10.

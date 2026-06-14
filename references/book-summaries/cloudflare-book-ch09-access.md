@@ -28,7 +28,7 @@ added: 2026-06-14
 5. **X-Cdn-Token** (or similar) via Transform Rule — origin middleware validates (Ch 10 checklist).
 6. mTLS origin pulls when tunnel + allowlist insufficient — SSL/TLS → Origin Server.
 
-## BrewHub notes
+## Production notes
 
 - Matches existing invariants: one tunnel per machine, Access before Worker deploy, no WS Access on handshake hostnames.
 - Coolify/Traefik: `https://localhost:443` + Origin Server Name + No TLS Verify when edge terminates.

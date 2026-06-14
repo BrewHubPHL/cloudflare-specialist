@@ -197,7 +197,7 @@ Full fit framework: [patterns/platform-assessment.md](patterns/platform-assessme
 | Lock-in tiers | Low: stateless+R2; High: Durable Objects — accept proportionally |
 | One DO per entity | Rate limits, sessions, WS rooms — never one global DO |
 | D1 horizontal model | Database-per-tenant; 10 GB is per DB not total cap |
-| BrewHub SSOT | Hyperdrive → fleet Postgres; D1 not payment ledger |
+| Postgres SSOT | Hyperdrive → fleet Postgres; D1 not payment ledger |
 | Workers AI | 8B first + AI Gateway; edge doesn't make LLM instant |
 | R2 zero egress | Cache in front; presigned for large uploads; metadata in D1/Postgres |
 | RAG | AI Search first; low-confidence gate; inference cost dominates |
@@ -284,7 +284,7 @@ Full fit framework: [patterns/platform-assessment.md](patterns/platform-assessme
 | `nextjs-specialist` | OpenNext config, `'use cache'` on Workers |
 | `supabase-specialist` | Hyperdrive / pooler URIs for Worker → Postgres |
 | `coolify-hetzner-specialist` | cloudflared on fleet boxes, Traefik origin TLS |
-| `brewhub-zero-trust` (in-repo) | Live fleet runbooks — public skill stays abstract |
+| Private overrides layer | Live fleet runbooks — public skill stays abstract |
 | `durable-objects` | Deep DO SQLite / WebSocket patterns |
 
 Run `node scripts/validate-skill.mjs` before PR.

@@ -32,12 +32,12 @@ Work in order — first clear answer usually wins:
 | **KV** | Eventual (~60s) | Config cache, feature flags, idempotency keys (short TTL) | Financial ledger, inventory SSOT |
 | **R2** | Strong per object | Uploads, exports, webhook payload archives | Hot relational queries |
 | **D1** | SQL, single-location DO | Per-tenant/per-user SQLite at edge | Monolithic multi-tenant DB, >10 GB partition |
-| **Hyperdrive** | Pooled Postgres/MySQL | Worker → existing Supabase/Postgres (**BrewHub SSOT**) | Schema migrations (still in Postgres) |
+| **Hyperdrive** | Pooled Postgres/MySQL | Worker → existing Supabase/Postgres (**your Postgres SSOT**) | Schema migrations (still in Postgres) |
 | **DO SQLite** | Strong, per entity | Coordination + small relational state per actor | Cross-entity SQL, analytics |
 
 **D1 mental model:** a Durable Object with SQL — single-threaded, 10 GB max **per database**, many databases by design.
 
-BrewHub default: **Hyperdrive → fleet Postgres** for money and customer data. D1 only for edge-native relational slices without SSOT role.
+Recommended default: **Hyperdrive → fleet Postgres** for money and customer data. D1 only for edge-native relational slices without SSOT role.
 
 ---
 
@@ -122,7 +122,7 @@ PITR to any minute (30 days paid) — `wrangler d1 time-travel restore`. Long ar
 
 ## KV binding
 
-Deep patterns: **[kv-hyperdrive.md](kv-hyperdrive.md)** — consistency traps, TTL, Hyperdrive pooling, BrewHub SSOT.
+Deep patterns: **[kv-hyperdrive.md](kv-hyperdrive.md)** — consistency traps, TTL, Hyperdrive pooling, Postgres SSOT.
 
 ```jsonc
 {
@@ -149,7 +149,7 @@ Quick binding:
 
 ---
 
-## Hyperdrive to Postgres (BrewHub SSOT)
+## Hyperdrive to Postgres SSOT
 
 Deep dive: **[kv-hyperdrive.md](kv-hyperdrive.md)** — query caching, pool exhaustion, multi-region replicas.
 

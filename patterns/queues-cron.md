@@ -171,7 +171,7 @@ Cron fires on schedule — **not** at-least-once job delivery, not backlog-aware
 
 ---
 
-## BrewHub
+## Production notes
 
 - **Not** for exactly-once payment semantics — Postgres SSOT + advisory locks (`supabase-specialist`)
 - Webhook fan-out, email, R2 post-processing, audit export jobs → Queues with idempotent consumers

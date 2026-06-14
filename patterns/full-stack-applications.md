@@ -156,7 +156,7 @@ New projects: Workers + `[assets]`, not Pages. Existing Pages: mechanical migrat
 
 ---
 
-## BrewHub
+## Production architecture
 
 ```
 OpenNext Worker (UI) + API Worker adapter

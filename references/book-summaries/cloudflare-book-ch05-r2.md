@@ -25,7 +25,7 @@ R2 for hot, egress-heavy assets; **custom domain** for delivery; **off-platform 
 8. Cross-cloud compute → R2 may see latency spikes during peak hours — prefer Workers colocated with R2 reads.
 9. S3 wins: massive cold archive with Intelligent-Tiering only.
 
-## BrewHub notes
+## Production notes
 
 - R2 for audit exports, webhook archives, presigned user uploads — metadata in Postgres.
 - Backups of fleet Postgres → off Cloudflare (Coolify backup target / separate object store).

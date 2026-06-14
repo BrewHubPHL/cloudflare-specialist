@@ -27,10 +27,10 @@ Author's **reference architecture:** compute/API/database on **Scaleway** (free 
 6. Disable Rocket Loader, Early Hints, Bot Fight for modern SPA if app handles security — tune for stack.
 7. Serve `security.txt` from app, not CF toggle.
 
-## BrewHub notes
+## Production notes
 
-- Direct BrewHub analog: **Hetzner/Coolify fleet + Cloudflare Workers/Tunnel** — same hybrid economics.
-- Checklist auth cookie name → map to BrewHub session cookie in Cache Rules.
+- Direct analog: **Hetzner/Coolify fleet + Cloudflare Workers/Tunnel** — same hybrid economics.
+- Checklist auth cookie name → map to your session cookie in Cache Rules.
 - Enshitification kill switch: maintain Hono/portable Worker code + off-CF backups (Ch 5).
 
 ## Cross-links

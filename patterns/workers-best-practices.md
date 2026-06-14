@@ -55,7 +55,7 @@ export async function onRequest(context: { request: Request }) {
 }
 ```
 
-Enables **HttpOnly session cookies** on one site — BrewHub preferred auth shape at edge.
+Enables **HttpOnly session cookies** on one site — the preferred auth shape at edge.
 
 OpenNext on Workers: same hostname for UI + API adapter Worker.
 
@@ -113,9 +113,9 @@ Keep domain logic free of Cloudflare-specific APIs except at thin adapter layer.
 
 ---
 
-## Database at edge (BrewHub)
+## Database at edge
 
-| Book recommendation | BrewHub |
+| Book recommendation | Recommended |
 |--------------------|---------|
 | Neon/PlanetScale + pooler for generic serverless | **Hyperdrive → fleet Postgres SSOT** |
 | D1 not for latency-sensitive UI/API | Agreed — D1 not payment/customer SSOT |

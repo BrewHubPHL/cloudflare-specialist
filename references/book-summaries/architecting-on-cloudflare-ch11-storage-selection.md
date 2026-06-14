@@ -52,7 +52,7 @@ Legitimate permanent architecture when: PostGIS/procs/extensions, multi-app DB, 
 
 D1 when: greenfield, global read replicas, managed entirely on Cloudflare, natural DB-per-tenant.
 
-**BrewHub:** Hyperdrive → fleet Postgres SSOT; D1 not payment ledger.
+**Recommendation:** Hyperdrive → fleet Postgres SSOT; D1 not payment ledger.
 
 ---
 

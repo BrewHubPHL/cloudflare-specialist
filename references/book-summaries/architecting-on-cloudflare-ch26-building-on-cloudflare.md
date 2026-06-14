@@ -82,7 +82,7 @@ Workers + D1 + DO compose freely — more upfront work, less fighting managed se
 
 ---
 
-## BrewHub synthesis
+## Synthesis
 
 Hybrid is the architecture, not compromise:
 

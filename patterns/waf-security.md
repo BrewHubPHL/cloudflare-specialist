@@ -22,7 +22,7 @@ Attackers find real origin via:
 
 ## Mitigation ladder (pick highest feasible)
 
-| Priority | Control | BrewHub default |
+| Priority | Control | Recommended |
 |----------|---------|-----------------|
 | 1 | **Cloudflare Tunnel** — no inbound ports | Yes |
 | 2 | Firewall **allowlist Cloudflare IPs only** | If tunnel impossible |
@@ -66,7 +66,7 @@ Opaque ASN lists in dashboard become unmaintainable in months.
 
 ### Geo blocking
 
-Policy choice — block countries with no customers/legal exposure. Document in ADR (`architectural-patterns.md`). BrewHub: decide explicitly; don't copy lists blindly.
+Policy choice — block countries with no customers/legal exposure. Document in ADR (`architectural-patterns.md`). Recommendation: decide explicitly; don't copy lists blindly.
 
 ---
 
@@ -92,7 +92,7 @@ Book distinguishes **TLS JA3** / JS fingerprint signals for bot detection from a
 
 ---
 
-## BrewHub checklist
+## Production checklist
 
 - [ ] Fleet services published only via **tunnel** — no `:443` on public Hetzner IP
 - [ ] Origin cannot be reached except through Cloudflare (or allowlist verified)

@@ -117,7 +117,7 @@ If internal calls must be WAF-gated: implement checks in Worker or cross zone bo
 { "placement": { "region": "aws:us-east-1" } }
 ```
 
-BrewHub: Hyperdrive to fleet Postgres → evaluate Smart Placement or explicit probe toward pooler region.
+Recommendation: with Hyperdrive to fleet Postgres, evaluate Smart Placement or explicit probe toward pooler region.
 
 ---
 

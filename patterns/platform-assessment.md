@@ -28,13 +28,13 @@ Capstone mental models: [Ch.26 summary](../references/book-summaries/architectin
 
 Prototype on Workers when constraints are unclear — low infra commitment, fast constraint discovery. Defaulting to a hyperscaler because it is familiar accumulates switching cost before fit is validated.
 
-BrewHub default: edge Workers + Zero Trust + self-hosted Postgres (Coolify/Hetzner). Hyperscaler or fleet-only paths require explicit justification.
+Recommended default: edge Workers + Zero Trust + self-hosted Postgres (Coolify/Hetzner). Hyperscaler or fleet-only paths require explicit justification.
 
 ---
 
 ## Kerkour reference architecture (Ch.10)
 
-Author production pattern — **BrewHub analog:**
+Author production pattern — **production analog:**
 
 ```
 Cloudflare (CDN, WAF, Workers, R2, edge)
@@ -122,7 +122,7 @@ Regional isolation on hyperscalers **does not** apply.
 
 ---
 
-## Hybrid boundary (BrewHub)
+## Hybrid boundary
 
 ```
 Edge (Workers)     → auth, rate limits, cache, routing, OpenNext UI, API adapter

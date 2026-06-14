@@ -163,7 +163,7 @@ vs AWS: API GW + Lambda + DynamoDB + ElastiCache → often one DO for presence/c
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Edge coordination (rate limits, session fan-out) → DO OK
 - **Payment / inventory SSOT** → fleet Postgres, not DO SQLite alone

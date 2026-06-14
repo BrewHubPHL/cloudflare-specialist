@@ -123,7 +123,7 @@ Tenant-supplied **step definitions** (SaaS automations, agent-generated plans) �
 
 ---
 
-## BrewHub notes
+## Production notes
 
 - Order/payment flows: Workflow for capture → reserve → notify; Postgres SSOT via Hyperdrive in steps with idempotency keys
 - Not for 10k independent webhook retries — Queue

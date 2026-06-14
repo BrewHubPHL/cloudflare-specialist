@@ -41,7 +41,7 @@ Cross-links: `durable-objects.md`, `workers-ai.md`, `workflows.md` (AgentWorkflo
 
 ---
 
-## BrewHub split
+## Edge vs fleet split
 
 ```
 Edge (Workers)

@@ -8,7 +8,7 @@
 
 Month-one isolation strategy determines year-three incidents. One missing `tenant_id` filter is a breach; database-per-tenant makes that class of bug architecturally impossible.
 
-BrewHub default: **Postgres SSOT on fleet** with RLS + tenant context from edge — not a D1 monolith for payment data. See `bindings-storage.md` (Hyperdrive).
+Recommended default: **Postgres SSOT on fleet** with RLS + tenant context from edge — not a D1 monolith for payment data. See `bindings-storage.md` (Hyperdrive).
 
 ---
 
